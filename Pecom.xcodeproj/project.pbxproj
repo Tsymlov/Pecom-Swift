@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
