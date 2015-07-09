@@ -10,11 +10,11 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
-    //MASK: - Properties
+    //MARK: - Properties
 
     @IBOutlet weak var backButton: UIButton!
     
-    //MASK: - View life cicle
+    //MARK: - View life cicle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +29,14 @@ class DetailsViewController: UIViewController {
         backButton.layer.borderColor = backButton.tintColor?.CGColor
     }
     
-    //MASK: - Actions
+    //MARK: - Actions
     
     @IBAction func backButtonTapped() {
         dismissViewControllerAnimated(true, completion: nil)
     }
 }
+
+//MARK: - UITableViewDataSource
 
 extension DetailsViewController: UITableViewDataSource{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,6 +55,8 @@ extension DetailsViewController: UITableViewDataSource{
         return cell
     }
 }
+
+//MARK: - UITableViewDelegate
 
 extension DetailsViewController: UITableViewDelegate{
     
