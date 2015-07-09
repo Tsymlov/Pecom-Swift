@@ -88,6 +88,7 @@
                     </view>
                     <connections>
                         <outlet property="orderNumberTextField" destination="9Gn-Ac-v4z" id="abf-bL-fGe"/>
+                        <segue destination="xo8-fT-buV" kind="presentation" identifier="FromCheckToDetails" id="1wr-ig-LQn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -97,6 +98,47 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="9se-YZ-ouJ">
+            <objects>
+                <viewController id="xo8-fT-buV" customClass="DetailsViewController" customModule="Pecom" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o1v-qT-seT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hog-TE-252"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DPD-Ih-hO8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05V-xL-zda">
+                                <rect key="frame" x="16" y="28" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e3T-6s-P32"/>
+                                    <constraint firstAttribute="width" constant="64" id="vOF-Fi-fHU"/>
+                                </constraints>
+                                <color key="tintColor" red="0.2470588235" green="0.43137254899999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Назад">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped" destination="xo8-fT-buV" eventType="touchUpInside" id="fJx-po-kr8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="05V-xL-zda" firstAttribute="top" secondItem="o1v-qT-seT" secondAttribute="bottom" constant="8" id="Aak-Vg-SRc"/>
+                            <constraint firstItem="05V-xL-zda" firstAttribute="leading" secondItem="DPD-Ih-hO8" secondAttribute="leadingMargin" id="zR1-Wh-YCd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="05V-xL-zda" id="BZc-7b-lLB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7i-Jx-Nb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="-304"/>
         </scene>
     </scenes>
 </document>

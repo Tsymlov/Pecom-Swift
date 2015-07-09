@@ -13,6 +13,7 @@ class CheckViewController: UIViewController{
     //MARK: - Properties
     
     @IBOutlet weak var orderNumberTextField: UITextField!
+    private let toDetailsSegueID = "FromCheckToDetails"
     
     //MARK: - View life cicle
     
@@ -32,6 +33,7 @@ class CheckViewController: UIViewController{
     
     private func checkOrder(){
         //TODO:
+        performSegueWithIdentifier(toDetailsSegueID, sender: self)
     }
 
     @IBAction func viewTapped(sender: UITapGestureRecognizer) {
