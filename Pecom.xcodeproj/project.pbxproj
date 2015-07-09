@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D78C5D21B4EB32700559452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C5D11B4EB32700559452 /* AppDelegate.swift */; };
+		3D78C5D41B4EB32700559452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C5D31B4EB32700559452 /* ViewController.swift */; };
+		3D78C5D71B4EB32700559452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D78C5D51B4EB32700559452 /* Main.storyboard */; };
+		3D78C5D91B4EB32700559452 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D78C5D81B4EB32700559452 /* Images.xcassets */; };
+		3D78C5DC1B4EB32700559452 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D78C5DA1B4EB32700559452 /* LaunchScreen.xib */; };
+		3D78C5E81B4EB32700559452 /* PecomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C5E71B4EB32700559452 /* PecomTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D78C5E21B4EB32700559452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D78C5C41B4EB32700559452 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D78C5CB1B4EB32700559452;
+			remoteInfo = Pecom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D78C5CC1B4EB32700559452 /* Pecom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pecom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D78C5D01B4EB32700559452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D78C5D11B4EB32700559452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D78C5D31B4EB32700559452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D78C5D61B4EB32700559452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D78C5D81B4EB32700559452 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D78C5DB1B4EB32700559452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3D78C5E11B4EB32700559452 /* PecomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PecomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D78C5E61B4EB32700559452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D78C5E71B4EB32700559452 /* PecomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PecomTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D78C5C91B4EB32700559452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D78C5DE1B4EB32700559452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D78C5C31B4EB32700559452 = {
+			isa = PBXGroup;
+			children = (
+				3D78C5CE1B4EB32700559452 /* Pecom */,
+				3D78C5E41B4EB32700559452 /* PecomTests */,
+				3D78C5CD1B4EB32700559452 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D78C5CD1B4EB32700559452 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C5CC1B4EB32700559452 /* Pecom.app */,
+				3D78C5E11B4EB32700559452 /* PecomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D78C5CE1B4EB32700559452 /* Pecom */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C5D11B4EB32700559452 /* AppDelegate.swift */,
+				3D78C5D31B4EB32700559452 /* ViewController.swift */,
+				3D78C5D51B4EB32700559452 /* Main.storyboard */,
+				3D78C5D81B4EB32700559452 /* Images.xcassets */,
+				3D78C5DA1B4EB32700559452 /* LaunchScreen.xib */,
+				3D78C5CF1B4EB32700559452 /* Supporting Files */,
+			);
+			path = Pecom;
+			sourceTree = "<group>";
+		};
+		3D78C5CF1B4EB32700559452 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C5D01B4EB32700559452 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D78C5E41B4EB32700559452 /* PecomTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C5E71B4EB32700559452 /* PecomTests.swift */,
+				3D78C5E51B4EB32700559452 /* Supporting Files */,
+			);
+			path = PecomTests;
+			sourceTree = "<group>";
+		};
+		3D78C5E51B4EB32700559452 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C5E61B4EB32700559452 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D78C5CB1B4EB32700559452 /* Pecom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D78C5EB1B4EB32700559452 /* Build configuration list for PBXNativeTarget "Pecom" */;
+			buildPhases = (
+				3D78C5C81B4EB32700559452 /* Sources */,
+				3D78C5C91B4EB32700559452 /* Frameworks */,
+				3D78C5CA1B4EB32700559452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pecom;
+			productName = Pecom;
+			productReference = 3D78C5CC1B4EB32700559452 /* Pecom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D78C5E01B4EB32700559452 /* PecomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D78C5EE1B4EB32700559452 /* Build configuration list for PBXNativeTarget "PecomTests" */;
+			buildPhases = (
+				3D78C5DD1B4EB32700559452 /* Sources */,
+				3D78C5DE1B4EB32700559452 /* Frameworks */,
+				3D78C5DF1B4EB32700559452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D78C5E31B4EB32700559452 /* PBXTargetDependency */,
+			);
+			name = PecomTests;
+			productName = PecomTests;
+			productReference = 3D78C5E11B4EB32700559452 /* PecomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D78C5C41B4EB32700559452 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Alexey Tsymlov";
+				TargetAttributes = {
+					3D78C5CB1B4EB32700559452 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3D78C5E01B4EB32700559452 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3D78C5CB1B4EB32700559452;
+					};
+				};
+			};
+			buildConfigurationList = 3D78C5C71B4EB32700559452 /* Build configuration list for PBXProject "Pecom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D78C5C31B4EB32700559452;
+			productRefGroup = 3D78C5CD1B4EB32700559452 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D78C5CB1B4EB32700559452 /* Pecom */,
+				3D78C5E01B4EB32700559452 /* PecomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D78C5CA1B4EB32700559452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D78C5D71B4EB32700559452 /* Main.storyboard in Resources */,
+				3D78C5DC1B4EB32700559452 /* LaunchScreen.xib in Resources */,
+				3D78C5D91B4EB32700559452 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D78C5DF1B4EB32700559452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D78C5C81B4EB32700559452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D78C5D41B4EB32700559452 /* ViewController.swift in Sources */,
+				3D78C5D21B4EB32700559452 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D78C5DD1B4EB32700559452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D78C5E81B4EB32700559452 /* PecomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D78C5E31B4EB32700559452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D78C5CB1B4EB32700559452 /* Pecom */;
+			targetProxy = 3D78C5E21B4EB32700559452 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D78C5D51B4EB32700559452 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D78C5D61B4EB32700559452 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D78C5DA1B4EB32700559452 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D78C5DB1B4EB32700559452 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D78C5E91B4EB32700559452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D78C5EA1B4EB32700559452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D78C5EC1B4EB32700559452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pecom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D78C5ED1B4EB32700559452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pecom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D78C5EF1B4EB32700559452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PecomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pecom.app/Pecom";
+			};
+			name = Debug;
+		};
+		3D78C5F01B4EB32700559452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PecomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pecom.app/Pecom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D78C5C71B4EB32700559452 /* Build configuration list for PBXProject "Pecom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D78C5E91B4EB32700559452 /* Debug */,
+				3D78C5EA1B4EB32700559452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D78C5EB1B4EB32700559452 /* Build configuration list for PBXNativeTarget "Pecom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D78C5EC1B4EB32700559452 /* Debug */,
+				3D78C5ED1B4EB32700559452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D78C5EE1B4EB32700559452 /* Build configuration list for PBXNativeTarget "PecomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D78C5EF1B4EB32700559452 /* Debug */,
+				3D78C5F01B4EB32700559452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D78C5C41B4EB32700559452 /* Project object */;
+}
