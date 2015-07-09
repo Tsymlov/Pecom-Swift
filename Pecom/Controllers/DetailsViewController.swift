@@ -35,3 +35,25 @@ class DetailsViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 }
+
+extension DetailsViewController: UITableViewDataSource{
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(DetailsTableViewCell.reuseID) as! DetailsTableViewCell
+        
+        switch indexPath.row{
+            //TODO:
+        default:
+            break
+        }
+        
+        return cell
+    }
+}
+
+extension DetailsViewController: UITableViewDelegate{
+    
+}
