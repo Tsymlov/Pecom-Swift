@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Check View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="CheckViewController" customModule="Pecom" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,10 +17,85 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-Pu-N6P">
+                                <rect key="frame" x="16" y="238" width="568" height="1"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.43137254899999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="HD2-ea-cNj"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер заявки или код груза" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Gn-Ac-v4z">
+                                <rect key="frame" x="16" y="247" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L4e-F7-2Rk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="9qH-Xa-wkb"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5w-cx-Oxs">
+                                <rect key="frame" x="224" y="285" width="152" height="30"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.22352941179999999" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="85P-dR-1n0"/>
+                                    <constraint firstAttribute="width" constant="152" id="Pce-ON-beT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="ПРОВЕРИТЬ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkButtonTapped" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aKA-AB-7BM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UU-7r-Y21">
+                                <rect key="frame" x="16" y="28" width="568" height="202"/>
+                                <string key="text">Для того, чтобы получить информацию о статусе заявки, введите предварительный код груза (например, АСВЛЭ-6/0511) или номер заявки (например, 123456) и нажмите на кнопку «Проверить»</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2470588235" green="0.43137254899999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="v5w-cx-Oxs" secondAttribute="centerY" id="2hS-s0-Lpo"/>
+                            <constraint firstItem="6UU-7r-Y21" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="6F9-p9-Ubm"/>
+                            <constraint firstItem="9Gn-Ac-v4z" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="6Tp-Ie-OMs"/>
+                            <constraint firstItem="6UU-7r-Y21" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="6d1-is-lY5"/>
+                            <constraint firstItem="gvf-Pu-N6P" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="9Vu-2r-iPv"/>
+                            <constraint firstItem="6UU-7r-Y21" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="JGc-W6-17e"/>
+                            <constraint firstItem="gvf-Pu-N6P" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="NGT-Dy-EZo"/>
+                            <constraint firstItem="gvf-Pu-N6P" firstAttribute="top" secondItem="6UU-7r-Y21" secondAttribute="bottom" constant="8" id="SMk-A3-N9K"/>
+                            <constraint firstItem="v5w-cx-Oxs" firstAttribute="top" secondItem="9Gn-Ac-v4z" secondAttribute="bottom" constant="8" id="Yzt-Jy-7lC"/>
+                            <constraint firstAttribute="centerX" secondItem="v5w-cx-Oxs" secondAttribute="centerX" id="al5-lM-EfU"/>
+                            <constraint firstItem="9Gn-Ac-v4z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="c81-sD-nQw"/>
+                            <constraint firstItem="9Gn-Ac-v4z" firstAttribute="top" secondItem="gvf-Pu-N6P" secondAttribute="bottom" constant="8" id="k85-Yu-hcU"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="21b-tD-GB1" appends="YES" id="Vsn-GJ-f7X"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="orderNumberTextField" destination="9Gn-Ac-v4z" id="abf-bL-fGe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="21b-tD-GB1">
+                    <connections>
+                        <action selector="viewTapped:" destination="vXZ-lx-hvc" id="Oqd-Fw-SrR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
