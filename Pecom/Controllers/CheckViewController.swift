@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CheckViewController: UIViewController{
     
@@ -28,18 +29,18 @@ class CheckViewController: UIViewController{
     //MARK: - Actions
     
     @IBAction func checkButtonTapped() {
-        checkOrder()
-    }
-    
-    private func checkOrder(){
-        //TODO:
-        performSegueWithIdentifier(toDetailsSegueID, sender: self)
+        performSegueWithIdentifier(toDetailsSegueID, sender: nil)
     }
 
     @IBAction func viewTapped(sender: UITapGestureRecognizer) {
         orderNumberTextField.resignFirstResponder()
     }
     
+    //MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let details = segue.destinationViewController as! DetailsViewController
+        details.orderNumber = orderNumberTextField.text
+    }
 }
 
 //MARK: - UITextFieldDelegate
@@ -47,7 +48,7 @@ class CheckViewController: UIViewController{
 extension CheckViewController: UITextFieldDelegate{
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         orderNumberTextField.resignFirstResponder()
-        checkOrder()
+        performSegueWithIdentifier(toDetailsSegueID, sender: nil)
         return true
     }
 }
