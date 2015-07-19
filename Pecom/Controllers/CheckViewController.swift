@@ -24,6 +24,11 @@ class CheckViewController: UIViewController{
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        clearOrderNumberTextField()
+    }
+    
+    private func clearOrderNumberTextField(){
+        orderNumberTextField.text = ""
     }
     
     //MARK: - Actions

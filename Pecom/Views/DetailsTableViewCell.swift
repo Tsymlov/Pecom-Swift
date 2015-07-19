@@ -11,7 +11,9 @@ import UIKit
 class DetailsTableViewCell: UITableViewCell {
     
     static let reuseID = "DetailsCell"
-
+    @IBOutlet weak var detail: UILabel!
+    @IBOutlet weak var title: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

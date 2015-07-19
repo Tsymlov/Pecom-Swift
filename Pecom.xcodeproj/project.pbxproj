@@ -16,7 +16,7 @@
 		3D78C5F71B4EB87500559452 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C5F61B4EB87500559452 /* CheckViewController.swift */; };
 		3D78C5FA1B4ECC4900559452 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C5F91B4ECC4900559452 /* DetailsViewController.swift */; };
 		3D78C5FC1B4ED25A00559452 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C5FB1B4ED25A00559452 /* DetailsTableViewCell.swift */; };
-		3D78C5FE1B4EE02800559452 /* CargoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C5FD1B4EE02800559452 /* CargoDetail.swift */; };
+		3D78C5FE1B4EE02800559452 /* CargoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C5FD1B4EE02800559452 /* CargoDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		3D78C5F61B4EB87500559452 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		3D78C5F91B4ECC4900559452 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		3D78C5FB1B4ED25A00559452 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
-		3D78C5FD1B4EE02800559452 /* CargoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CargoDetail.swift; sourceTree = "<group>"; };
+		3D78C5FD1B4EE02800559452 /* CargoDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CargoDetails.swift; sourceTree = "<group>"; };
 		70FB2F707FB0FB765041E11A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C824CB915A9600C1F24128D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,7 +163,7 @@
 		3D78C5F81B4EC91A00559452 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3D78C5FD1B4EE02800559452 /* CargoDetail.swift */,
+				3D78C5FD1B4EE02800559452 /* CargoDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 				3D78C5D21B4EB32700559452 /* AppDelegate.swift in Sources */,
 				3D78C5FC1B4ED25A00559452 /* DetailsTableViewCell.swift in Sources */,
 				3D78C5FA1B4ECC4900559452 /* DetailsViewController.swift in Sources */,
-				3D78C5FE1B4EE02800559452 /* CargoDetail.swift in Sources */,
+				3D78C5FE1B4EE02800559452 /* CargoDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

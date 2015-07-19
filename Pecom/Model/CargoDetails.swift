@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CargoDetail {
+class CargoDetails {
     var arrivalDateTimeString: String?
     var arrivalPlanDateTimeString: String?
     var cargoStatus: String?

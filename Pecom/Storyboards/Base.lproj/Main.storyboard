@@ -149,6 +149,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detail" destination="qSq-UM-HC6" id="Lfe-qJ-rIM"/>
+                                            <outlet property="title" destination="YOK-d7-zFI" id="iOg-cb-rYw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -165,6 +169,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="05V-xL-zda" id="BZc-7b-lLB"/>
+                        <outlet property="tableView" destination="0iu-Un-JhN" id="yiF-mZ-l2f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7i-Jx-Nb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
