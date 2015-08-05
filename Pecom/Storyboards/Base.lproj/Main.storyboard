@@ -30,6 +30,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="L4e-F7-2Rk"/>
                                 </constraints>
+                                <color key="textColor" red="0.015686274510000001" green="0.20000000000000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                 <connections>
@@ -118,9 +119,7 @@
                                     <constraint firstAttribute="width" constant="64" id="vOF-Fi-fHU"/>
                                 </constraints>
                                 <color key="tintColor" red="0.2470588235" green="0.43137254899999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Назад">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Назад"/>
                                 <connections>
                                     <action selector="backButtonTapped" destination="xo8-fT-buV" eventType="touchUpInside" id="fJx-po-kr8"/>
                                 </connections>
